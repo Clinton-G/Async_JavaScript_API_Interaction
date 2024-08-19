@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="implementing_timers.js"></script>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    #timer {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    #notifications div {
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+
+</style>
+<body>
+    <div id="Timer">00:00</div>
+    <input type="number" id="Duration" placeholder="Enter Duration (Seconds)">
+    <button onclick="startTimer()">Start Timer</button>
+
+    <div id="notifications"></div>
+</body>
+</html>
